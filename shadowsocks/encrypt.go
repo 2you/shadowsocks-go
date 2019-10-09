@@ -12,9 +12,9 @@ import (
 	"io"
 
 	"github.com/aead/chacha20"
-	"github.com/golang/x/crypto/blowfish"
-	"github.com/golang/x/crypto/cast5"
-	"github.com/golang/x/crypto/salsa20/salsa"
+	"golang.org/x/crypto/blowfish"
+	"golang.org/x/crypto/cast5"
+	"golang.org/x/crypto/salsa20/salsa"
 )
 
 var errEmptyPassword = errors.New("empty key")
