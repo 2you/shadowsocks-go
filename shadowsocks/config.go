@@ -98,7 +98,7 @@ func SetDebug(d DebugLog) {
 func UpdateConfig(old, new *Config) {
 	// Using reflection here is not necessary, but it's a good exercise.
 	// For more information on reflections in Go, read "The Laws of Reflection"
-	// http://golang.org/doc/articles/laws_of_reflection.html
+	// http://github.com/golang/doc/articles/laws_of_reflection.html
 	newVal := reflect.ValueOf(new).Elem()
 	oldVal := reflect.ValueOf(old).Elem()
 
